@@ -42,8 +42,8 @@ app.get("/", (req, res) => {
 });
 
 //about
-app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/about.html");
+app.get("/disclaimer", (req, res) => {
+  res.sendFile(__dirname + "/disclaimer.html");
   return;
 });
 
