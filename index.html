@@ -1,0 +1,91 @@
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+    <meta name="description" content="Get books easily, for free"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/309c5cca-6250-4906-a738-5feca93112a4%2Ffavicon.ico?1503062906990" />
+    <title>Libert 📖</title>
+  </head>
+  <body>
+    <style>
+      #form{
+        padding-top:10%;
+        padding-bottom: 10%;
+      }
+      .footer{
+        padding-top: 1%;
+        padding-bottom: 0%;
+      }
+    </style>
+          <section class="hero is-dark">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  <a onclick="window.location.reload()">Libert <i class="fa fa-book"></i></a>
+                </h1>
+                <h2 class="subtitle">
+                  Get e-books for free, easily
+                </h2>
+              </div>
+            </div>
+        </section>
+        <form id="form">
+          <div class="container">
+          <div class="field has-addons has-addons-centered">
+            <div class="control has-icons-left">
+              <input type="text" class="input is-large " id="lolz" placeholder="Type in a book...">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-book"></i>
+                  </span>
+            </div>
+              <div class="control">
+                <button type="submit" class="button is-primary is-large">
+                  <i class="fa fa-search"></i> 
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+<p>
+              <strong>Libert</strong> made with <i class="fa fa-heart"></i> by <a href="http://jajoosam.tech">Samarth Jajoo</a>. <br> <br> <a href="/disclaimer">Disclaimer</a>.
+            </p>
+            <script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/jajoosam" target="_blank">Support Libert</a>
+            <p>
+              <a class="icon" href="https://github.com/jajoosam/libert">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+  </body>
+    <script>
+      document.getElementById("lolz").focus();
+document.getElementById("form").addEventListener("submit", function(ev) {
+    ev.preventDefault();
+  var button = document.getElementById('lolz');
+  var location = window.location.href + lolz.value;
+  console.log(location)
+  window.location.href = location;
+});
+
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57856524-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
+
